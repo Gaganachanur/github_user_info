@@ -24,16 +24,14 @@ function App() {
       .catch((err) => console.error(err));
   };
 
-
-
   return (
     <div className="App">
       <div className="input">
         <label htmlFor="username">Github username: </label>
         <input
           onChange={(e) => {
-            
-            setVal(e.target.value)}}
+            setVal(e.target.value);
+          }}
           id="username"
           type="text"
         />
@@ -59,7 +57,7 @@ function App() {
               <div className="col">Size</div>
             </header>
           ) : (
-            <div className="error"> Repo Not Found for {val}</div>
+            <div className="error"> Repo Not Found </div>
           )}
 
           {rdata
